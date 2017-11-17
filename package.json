@@ -12,6 +12,8 @@
   "author": "Klaasjan Horlings",
   "license": "ISC",
   "files": [
+    "build/**/*.js",
+    "build/**/*.d.ts",
     "src/**/*.ts",
     "test/**/*.ts"
   ],
