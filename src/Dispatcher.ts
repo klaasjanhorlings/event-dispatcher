@@ -26,7 +26,7 @@ export class Dispatcher<TEvent, TThis> implements IDispatcher<TEvent, TThis> {
 
     constructor(private readonly thisArg?: TThis) { }
 
-    dispatch(event: TEvent): void {
+    dispatch(event?: TEvent): void {
         this.definitions.forEach(
             (def) => def.handler.call(def.thisArg || this.thisArg, event),
         );
