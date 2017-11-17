@@ -1,0 +1,31 @@
+{
+  "name": "eventdispatcher",
+  "version": "1.0.0",
+  "description": "Very basic event dispatcher",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "pretest": "tsc -p tsconfig.test.json",
+    "test": "mocha ./test/build/test/ --recursive",
+    "prepare": "tsc -p tsconfig.json"
+  },
+  "author": "Klaasjan Horlings",
+  "license": "ISC",
+  "files": [
+    "build/**/*.js",
+    "build/**/*.d.ts",
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@types/sinon": "^2.3.6",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.1",
+    "tslib": "^1.8.0",
+    "typescript": "^2.5.3"
+  }
+}
