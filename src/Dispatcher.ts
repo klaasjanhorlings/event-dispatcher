@@ -6,6 +6,7 @@ type ListenerDefinition<TEvent, TThis> = {
 };
 
 export interface IDispatcher<TEvent, TThis> {
+    dispatch(): void;
     dispatch(event: TEvent): void;
 
     add(handler: Handler<TEvent, TThis>): boolean;
