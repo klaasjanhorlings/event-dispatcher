@@ -13,8 +13,6 @@ constructor<TEvent, TThis>(thisArg?: TThis)
 ```
 Returns a new Dispatcher object. If a thisArg argument is provided it will be used as **this** object on all subsequent dispatch calls, unless the listener has been added with it's own thisArg. 
 
-*See add()*
-
 ### dispatch()
 ```typescript
 dispatch(): void;
